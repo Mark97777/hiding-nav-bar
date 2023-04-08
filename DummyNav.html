@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Nav Bar</title>
+	
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body {
+			height: 70em;
+		}
+		#hamburgerIcon {
+			display: none;
+		}
+		nav {
+			transition: 200ms;
+			display: flex;
+			right: -70rem;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #999;
+			padding: 2rem;
+			color: white;
+			height: 2rem;
+			position: fixed;
+			width: 100%;
+		}
+		nav:hover {
+			transition: 200ms;
+			transform: translateX(-70rem);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #999;
+			padding: 2rem;
+			color: white;
+			height: 2rem;
+			position: fixed;
+			width: 100%;
+		}
+		nav ul {
+			list-style: none;
+			display: flex;
+			gap: 2rem;
+		}
+		nav ul li {
+			background: ;
+			padding: 0.8rem;
+		}
+		nav ul li:hover {
+			background-color: white;
+			padding: 0.8rem;
+			color: #333;
+		}
+		
+		@media (max-width: 650px) {
+			nav ul li:not(#hamburgerIcon) {
+				display: none;
+			}
+			nav ul #hamburgerIcon {
+				display: block;
+			}
+			
+			nav {
+				transition: 200ms;
+				display: flex;
+				right: -20rem;
+				justify-content: space-between;
+				align-items: center;
+				background-color: #999;
+				padding: 2rem;
+				color: white;
+				height: 2rem;
+				position: fixed;
+				width: 100%;
+			}
+			
+			nav:hover {
+				transition: 200ms;
+				transform: translateX(-20rem);
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: #999;
+				padding: 2rem;
+				color: white;
+				height: 2rem;
+				position: fixed;
+				width: 100%;
+			}
+			
+		}
+	</style>
+	
+   </head>
+   <body>
+	<nav>
+		<h1>Logo</h1>
+		<ul>
+			<li id = "hamburgerIcon"><span class = "fa fa-hamburger"></span></li>
+			<li>Home</li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>Service</li>
+		</ul>
+	</nav>
+   </body>
+</html>
+   
